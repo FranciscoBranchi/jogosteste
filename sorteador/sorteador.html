@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="estilo.css">
+    <div>
+        <h1 class="titulo">Gerador de Números!</h1>
+    </div>
+        <p>Escolha quantos número deseja gerar (e eles não são repetidos!)</p>
+    <div class="blocomaior">
+        <h2>Insira os parâmetros no sorteador:</h2>
+        <div class="alinhaColuna ">
+            <div>
+                <label>Quantidade de números:</label>
+                <input type="number" min="0" size="4" id="quantidade">
+            </div>
+            <div>
+                <label>Menor número:</label>
+                <input type="number" min="0" size="4" id="minimo">
+            </div>
+            <div>
+                <label>Maior número:</label>
+                <input type="number" min="0" size="4" id="maximo">
+            </div>
+            <div class="espacamento unselectable">
+                <a class="botao" onclick="sortear()">Sortear</a>
+                <a class="botao" onclick="limpar()">Reiniciar</a>
+            </div>
+        </div>
+        <div>
+            <h2>Números sorteados:</h2>
+            <div class="overflow">
+                <h2 id="lista"></h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="espacamento">
+        <a href="../index.html" class="botao">Voltar ao menu inicial.</a>
+    </div>
+    </link>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

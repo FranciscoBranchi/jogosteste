@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="estilo.css">
+    <div>
+        <h1 class="titulo">Carrinho de Compras!</h1>
+        <p>Compre quantos produtos quiser.</p>
+        </div>
+    <div class="blocomaior tabelamento" >
+        <div class="tabelamento">
+            <h2>Escolha seu Produto:</h2>
+            <form>
+                <select class="tamanholista" id="ProdutoLista">
+                    <option value="1"></option>
+                    <option value="2" selected="selected"></option>
+                    <option value="3"></option>
+                </select>
+            </form>
+            <div style="width: 10px;">
+                <label>Quantidade:</label>
+                <input type="number" min="0" max="99" size="3" id="quantidade" value="0">
+            </div>
+            <div class="espacamento">
+                <a class="botao unselectable" onclick="addCarrinho()">Adicionar ao Carrinho</a>
+                <a class="botao unselectable" onclick="limpar()">Limpar</a>
+            </div>
+        </div>
+        <div class="tabelamento">
+            <h2>Carrinho de compras:</h2>
+            <div class="tabelamento fontelista blocomenor scrollbar">
+                <p id="lista"></p>
+            </div>
+            <div>
+                <h2 id="total">Total = R$0</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="espacamento">
+        <a href="../index.html" class="botao">Voltar ao menu inicial.</a>
+    </div>
+    </link>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

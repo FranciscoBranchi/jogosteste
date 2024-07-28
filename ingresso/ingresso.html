@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Jogos</title>
+</head>
+<body>
+    <link rel="stylesheet" href="estilo.css">
+    <div>
+        <h1 class="titulo">Sistema de Ingresso!</h1>
+        <p>Neste jogo você pode comprar quantos ingressos quiser de qualquer tipo, desde que tenha disponível.</p>
+    </div>
+    <div class="blocomaior tabelamento" >
+        <div class="tabelamento">
+            <h1>Escolha seu ingresso:</h1>
+            <form>
+                <select class="tamanholista" id="ingressoLista">
+                    <option value="1">Cadeira inferior</option>
+                    <option value="2">Cadeira superior</option>
+                    <option value="3">Pista</option>
+                </select>
+            </form>
+            <div style="width: 10px;">
+                <label>Quantidade:</label>
+                <input type="number" min="0" size="3" id="quantidade" value="0">
+            </div>
+            <div class="espacamento unselectable">
+                <a class="botao" onclick="comprarIngresso()">Comprar</a>
+            </div>
+        </div>
+        <div class="tabelamento fontelista blocomenor">
+            <p>Ingressos disponíves:</p>
+            <p id="inferiorQuant"></p>
+            <p id="superiorQuant"></p>
+            <p id="pistaQuant"></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="espacamento">
+        <a href="../index.html" class="botao">Voltar ao menu inicial.</a>
+    </div>
+    </link>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

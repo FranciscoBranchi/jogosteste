@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Jogos</title>
+</head>
+<body>
+    <link rel="stylesheet" href="estilo.css">
+    <div>
+        <h1 class="titulo">Aluguel de Jogos!</h1>
+        <p>Este jogo é simples. Você pode escolher entre alugar quantos jogos quiser, e devolver quando quiser.</p>
+    </div>
+    <p></p>
+    <div class="borda">
+        <figure>
+            <div class="sem-quebra-linha" id="jogo1image">
+            <img src="images/monopoly.png" alt="Monopoly">
+            </div>
+            <div class="sem-quebra-linha" id="jogo2image">
+            <img src="images/takenoko.png">
+            </div>
+            <div class="sem-quebra-linha" id="jogo3image">
+            <img src="images/ticket_to_ride.png">
+            </div>
+            <p></p>
+            <figcaption>
+                <a href="#" class="botao paddingbotao" id="jogo1" onclick="alterarStatus(1)">Alugar</a>
+                <a href="#" class="botao paddingbotao" id="jogo2" onclick="alterarStatus(2)">Alugar</a>
+                <a href="#" class="botao" id="jogo3" onclick="alterarStatus(3)">Alugar</a>
+            </figcaption>
+        </figure>
+        <p></p>
+
+    </div>
+    <div class="espacamento">
+        <a href="../index.html" class="botao">Voltar ao menu inicial.</a>
+    </div>
+    </link>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
